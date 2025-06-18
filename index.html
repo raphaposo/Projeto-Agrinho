@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech - Tecnologia para o Campo</title>
+    <meta name="description" content="Site especializado em tecnologias agrícolas para pequenos produtores rurais e técnicos">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link" aria-label="Pular para o conteúdo principal">Pular para o conteúdo</a>
+
+    <!-- Header -->
+    <header role="banner" aria-label="Cabeçalho do site">
+        <nav class="navbar" role="navigation" aria-label="Navegação principal">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-seedling" aria-hidden="true"></i>
+                    <span>AgroTech</span>
+                </div>
+                <button class="nav-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem">Início</a></li>
+                    <li role="none"><a href="#blog" role="menuitem">Blog</a></li>
+                    <li role="none"><a href="#tools" role="menuitem">Ferramentas</a></li>
+                    <li role="none"><a href="#calculators" role="menuitem">Calculadoras</a></li>
+                    <li role="none"><a href="#suppliers" role="menuitem">Fornecedores</a></li>
+                    <li role="none"><a href="#forum" role="menuitem">Fórum</a></li>
+                    <li role="none"><a href="#videos" role="menuitem">Tutoriais</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Tecnologia para o Campo</h1>
+                <p>Ajudamos pequenos produtores rurais e técnicos a aplicar tecnologias modernas na agricultura</p>
+                <button class="cta-button" onclick="scrollToSection('blog')" aria-describedby="cta-description">
+                    Explore Nosso Conteúdo
+                </button>
+                <div id="cta-description" class="sr-only">Clique para ir para a seção do blog com dicas práticas</div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="section" aria-labelledby="blog-title">
+            <div class="container">
+                <h2 id="blog-title">Blog - Dicas Práticas</h2>
+                <div class="blog-grid" role="region" aria-label="Artigos do blog">
+                    <article class="blog-card" tabindex="0">
+                        <h3>Irrigação Inteligente: Como Economizar Água</h3>
+                        <p>Descubra técnicas modernas de irrigação que podem reduzir o consumo de água em até 40%.</p>
+                        <time datetime="2024-01-15">15 de Janeiro, 2024</time>
+                        <button class="read-more" aria-label="Ler artigo completo sobre irrigação inteligente">Ler Mais</button>
+                    </article>
+                    <article class="blog-card" tabindex="0">
+                        <h3>Análise de Solo com Tecnologia</h3>
+                        <p>Como usar sensores e aplicativos para fazer análises precisas do solo da sua propriedade.</p>
+                        <time datetime="2024-01-12">12 de Janeiro, 2024</time>
+                        <button class="read-more" aria-label="Ler artigo completo sobre análise de solo">Ler Mais</button>
+                    </article>
+                    <article class="blog-card" tabindex="0">
+                        <h3>Drones na Agricultura</h3>
+                        <p>Guia completo sobre como usar drones para monitoramento de culturas e pulverização.</p>
+                        <time datetime="2024-01-10">10 de Janeiro, 2024</time>
+                        <button class="read-more" aria-label="Ler artigo completo sobre drones na agricultura">Ler Mais</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Catalog -->
+        <section id="tools" class="section" aria-labelledby="tools-title">
+            <div class="container">
+                <h2 id="tools-title">Catálogo de Ferramentas</h2>
+                <div class="tools-grid" role="region" aria-label="Catálogo de ferramentas agrícolas">
+                    <div class="tool-card" tabindex="0">
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <h3>Apps de Monitoramento</h3>
+                        <p>Aplicativos para monitorar clima, pragas e doenças em tempo real.</p>
+                        <button class="tool-button" aria-label="Ver detalhes dos aplicativos de monitoramento">Ver Detalhes</button>
+                    </div>
+                    <div class="tool-card" tabindex="0">
+                        <i class="fas fa-satellite" aria-hidden="true"></i>
+                        <h3>Sensores IoT</h3>
+                        <p>Sensores inteligentes para umidade, temperatura e nutrientes do solo.</p>
+                        <button class="tool-button" aria-label="Ver detalhes dos sensores IoT">Ver Detalhes</button>
+                    </div>
+                    <div class="tool-card" tabindex="0">
+                        <i class="fas fa-robot" aria-hidden="true"></i>
+                        <h3>Automação Agrícola</h3>
+                        <p>Sistemas automatizados de irrigação e aplicação de defensivos.</p>
+                        <button class="tool-button" aria-label="Ver detalhes da automação agrícola">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculators -->
+        <section id="calculators" class="section" aria-labelledby="calc-title">
+            <div class="container">
+                <h2 id="calc-title">Calculadoras Agrícolas</h2>
+                <div class="calc-container" role="region" aria-label="Calculadoras agrícolas">
+                    <div class="calculator" tabindex="0">
+                        <h3>Calculadora de Irrigação</h3>
+                        <form aria-labelledby="irrigation-calc">
+                            <div class="input-group">
+                                <label for="area">Área (hectares):</label>
+                                <input type="number" id="area" name="area" min="0" step="0.1" aria-describedby="area-help">
+                                <div id="area-help" class="help-text">Digite a área em hectares</div>
+                            </div>
+                            <div class="input-group">
+                                <label for="crop-type">Tipo de Cultura:</label>
+                                <select id="crop-type" name="crop-type" aria-describedby="crop-help">
+                                    <option value="">Selecione...</option>
+                                    <option value="milho">Milho</option>
+                                    <option value="soja">Soja</option>
+                                    <option value="feijao">Feijão</option>
+                                    <option value="tomate">Tomate</option>
+                                </select>
+                                <div id="crop-help" class="help-text">Escolha o tipo de cultura plantada</div>
+                            </div>
+                            <button type="button" onclick="calculateIrrigation()" aria-describedby="calc-result">
+                                Calcular Necessidade de Água
+                            </button>
+                        </form>
+                        <div id="calc-result" class="result" role="status" aria-live="polite"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suppliers Map -->
+        <section id="suppliers" class="section" aria-labelledby="suppliers-title">
+            <div class="container">
+                <h2 id="suppliers-title">Mapa de Fornecedores</h2>
+                <div class="suppliers-container" role="region" aria-label="Lista de fornecedores por região">
+                    <div class="filter-controls">
+                        <label for="region-filter">Filtrar por Região:</label>
+                        <select id="region-filter" onchange="filterSuppliers()" aria-describedby="filter-help">
+                            <option value="">Todas as Regiões</option>
+                            <option value="norte">Norte</option>
+                            <option value="nordeste">Nordeste</option>
+                            <option value="centro-oeste">Centro-Oeste</option>
+                            <option value="sudeste">Sudeste</option>
+                            <option value="sul">Sul</option>
+                        </select>
+                        <div id="filter-help" class="help-text">Use o filtro para encontrar fornecedores na sua região</div>
+                    </div>
+                    <div class="suppliers-list" role="list">
+                        <div class="supplier-card" data-region="sudeste" role="listitem" tabindex="0">
+                            <h3>AgroSolutions SP</h3>
+                            <p><strong>Especialidade:</strong> Sensores e automação</p>
+                            <p><strong>Região:</strong> Sudeste</p>
+                            <p><strong>Contato:</strong> (11) 9999-9999</p>
+                            <button class="contact-button" aria-label="Entrar em contato com AgroSolutions SP">Contatar</button>
+                        </div>
+                        <div class="supplier-card" data-region="sul" role="listitem" tabindex="0">
+                            <h3>TechAgro RS</h3>
+                            <p><strong>Especialidade:</strong> Drones e pulverização</p>
+                            <p><strong>Região:</strong> Sul</p>
+                            <p><strong>Contato:</strong> (51) 8888-8888</p>
+                            <button class="contact-button" aria-label="Entrar em contato com TechAgro RS">Contatar</button>
+                        </div>
+                        <div class="supplier-card" data-region="centro-oeste" role="listitem" tabindex="0">
+                            <h3>Campo Digital MT</h3>
+                            <p><strong>Especialidade:</strong> Software e análises</p>
+                            <p><strong>Região:</strong> Centro-Oeste</p>
+                            <p><strong>Contato:</strong> (65) 7777-7777</p>
+                            <button class="contact-button" aria-label="Entrar em contato com Campo Digital MT">Contatar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forum -->
+        <section id="forum" class="section" aria-labelledby="forum-title">
+            <div class="container">
+                <h2 id="forum-title">Fórum da Comunidade</h2>
+                <div class="forum-container" role="region" aria-label="Discussões do fórum">
+                    <div class="forum-stats">
+                        <div class="stat" role="img" aria-label="1,234 membros ativos">
+                            <strong>1,234</strong>
+                            <span>Membros Ativos</span>
+                        </div>
+                        <div class="stat" role="img" aria-label="567 discussões">
+                            <strong>567</strong>
+                            <span>Discussões</span>
+                        </div>
+                        <div class="stat" role="img" aria-label="2,890 respostas">
+                            <strong>2,890</strong>
+                            <span>Respostas</span>
+                        </div>
+                    </div>
+                    <div class="forum-topics" role="list">
+                        <div class="topic" role="listitem" tabindex="0">
+                            <h3>Problemas com Pragas no Milho</h3>
+                            <p>Discussão sobre controle biológico de pragas</p>
+                            <div class="topic-meta">
+                                <span>12 respostas</span> • <span>Última atividade: 2h atrás</span>
+                            </div>
+                        </div>
+                        <div class="topic" role="listitem" tabindex="0">
+                            <h3>Análise de Custo-Benefício de Drones</h3>
+                            <p>Compartilhe sua experiência com drones na agricultura</p>
+                            <div class="topic-meta">
+                                <span>8 respostas</span> • <span>Última atividade: 4h atrás</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="join-forum" aria-label="Participar do fórum da comunidade">Participar do Fórum</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Tutorials -->
+        <section id="videos" class="section" aria-labelledby="videos-title">
+            <div class="container">
+                <h2 id="videos-title">Tutoriais em Vídeo</h2>
+                <div class="videos-grid" role="region" aria-label="Tutoriais em vídeo">
+                    <div class="video-card" tabindex="0">
+                        <div class="video-thumbnail" role="img" aria-label="Thumbnail do vídeo sobre instalação de sensores">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                        <h3>Como Instalar Sensores de Solo</h3>
+                        <p>Tutorial passo a passo para instalação e configuração de sensores de umidade do solo.</p>
+                        <div class="video-meta">
+                            <span aria-label="Duração: 12 minutos e 30 segundos">12:30</span>
+                            <span aria-label="1,523 visualizações">1,523 views</span>
+                        </div>
+                        <button class="play-button" aria-label="Reproduzir vídeo sobre instalação de sensores de solo">Assistir Agora</button>
+                        <!-- Transcript link for accessibility -->
+                        <button class="transcript-button" aria-label="Ver transcrição do vídeo">Transcrição</button>
+                    </div>
+                    <div class="video-card" tabindex="0">
+                        <div class="video-thumbnail" role="img" aria-label="Thumbnail do vídeo sobre configuração de drones">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                        <h3>Configuração Básica de Drones</h3>
+                        <p>Aprenda a configurar seu drone para pulverização e monitoramento de culturas.</p>
+                        <div class="video-meta">
+                            <span aria-label="Duração: 18 minutos e 45 segundos">18:45</span>
+                            <span aria-label="2,156 visualizações">2,156 views</span>
+                        </div>
+                        <button class="play-button" aria-label="Reproduzir vídeo sobre configuração de drones">Assistir Agora</button>
+                        <button class="transcript-button" aria-label="Ver transcrição do vídeo">Transcrição</button>
+                    </div>
+                    <div class="video-card" tabindex="0">
+                        <div class="video-thumbnail" role="img" aria-label="Thumbnail do vídeo sobre análise de dados">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                        <h3>Análise de Dados Agrícolas</h3>
+                        <p>Como interpretar dados coletados por sensores e tomar decisões baseadas em evidências.</p>
+                        <div class="video-meta">
+                            <span aria-label="Duração: 25 minutos e 12 segundos">25:12</span>
+                            <span aria-label="987 visualizações">987 views</span>
+                        </div>
+                        <button class="play-button" aria-label="Reproduzir vídeo sobre análise de dados agrícolas">Assistir Agora</button>
+                        <button class="transcript-button" aria-label="Ver transcrição do vídeo">Transcrição</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Rodapé do site">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AgroTech</h3>
+                    <p>Conectando produtores rurais com a tecnologia do futuro.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p>Email: contato@agrotech.com.br</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Acessibilidade</h3>
+                    <p>Este site foi desenvolvido seguindo as diretrizes de acessibilidade WCAG 2.1.</p>
+                    <button id="high-contrast" aria-label="Ativar alto contraste">Alto Contraste</button>
+                    <button id="font-size" aria-label="Aumentar tamanho da fonte">Aumentar Fonte</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AgroTech. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Accessibility Features -->
+    <div id="accessibility-panel" class="accessibility-panel" role="region" aria-label="Painel de acessibilidade">
+        <button id="accessibility-toggle" aria-label="Abrir painel de acessibilidade" aria-expanded="false">
+            <i class="fas fa-universal-access" aria-hidden="true"></i>
+        </button>
+        <div class="accessibility-controls" id="accessibility-controls">
+            <h3>Opções de Acessibilidade</h3>
+            <button onclick="toggleHighContrast()" aria-pressed="false">Alto Contraste</button>
+            <button onclick="increaseFontSize()" aria-label="Aumentar tamanho da fonte">Fonte +</button>
+            <button onclick="decreaseFontSize()" aria-label="Diminuir tamanho da fonte">Fonte -</button>
+            <button onclick="toggleScreenReader()" aria-pressed="false">Leitor de Tela</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
